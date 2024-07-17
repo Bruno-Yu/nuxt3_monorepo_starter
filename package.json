@@ -1,0 +1,38 @@
+{
+  "name": "nuxt3_monorepo_starter",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "dotenv -- pnpm -r dev",
+    "app": "pnpm --filter @nuxt3_monorepo/app"
+  },
+  "lint-staged": {
+    "*.{ts,js,vue}": [
+      "eslint ."
+    ]
+  },
+  "dependencies": {
+    "@nuxt/eslint": "^0.3.13",
+    "@pinia/nuxt": "^0.5.1",
+    "mathjs": "^12.4.1",
+    "nuxt": "^3.11.2",
+    "pinia": "^2.1.7",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@element-plus/nuxt": "^1.0.8",
+    "@nuxtjs/eslint-config": "^12.0.0",
+    "@nuxtjs/i18n": "^8.3.0",
+    "@nuxtjs/tailwindcss": "^6.11.4",
+    "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
+    "dayjs-nuxt": "^2.1.9",
+    "element-plus": "^2.6.3",
+    "eslint": "^9.6.0",
+    "sass": "^1.74.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

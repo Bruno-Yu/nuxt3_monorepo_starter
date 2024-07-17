@@ -1,0 +1,17 @@
+{
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "eslint.options": {
+    "overrideConfigFile": "./eslint.config.mjs"
+  },
+  //"eslint.useFlatConfig": true, //  3.0.10 已不用特別設置
+  "eslint.validate": [ // 這段也不需要加，主要是會先吃專案中的 eslint.config.mjs 檔，目標檔案部分 @nuxt/eslint 已有預設
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue"
+  ]
+}

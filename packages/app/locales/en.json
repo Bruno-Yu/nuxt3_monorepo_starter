@@ -1,0 +1,6 @@
+{  
+  "validate": {
+    "error": "var_1's format is invalid",
+    "required": "var_1 is required"
+  }
+}

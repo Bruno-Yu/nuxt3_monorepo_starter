@@ -1,0 +1,34 @@
+{
+  "name": "@nuxt3_monorepo/app",
+  "private": true,
+  "type": "module",
+  "version": "2.0.0",
+  "scripts": {
+    "build": "nuxt build --dotenv .env.develop",
+    "dev": "nuxt dev  --dotenv .env.runtime -p 3000",
+    "generate:develop": "nuxt generate  --dotenv .env.develop",
+    "generate:stage": "nuxt generate --dotenv .env.stage",
+    "generate:prod": "nuxt generate --dotenv .env.prod",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{ts,js,vue}": [
+      "eslint ."
+    ]
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@nuxt3_monorepo/ui": "workspace:^",
+    "sharp": "^0.33.4",
+    "fs-extra": "^11.2.0",
+    "glob": "^10.4.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
